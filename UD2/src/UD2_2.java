@@ -15,7 +15,7 @@ public class UD2_2 {
 	}
 	public static boolean existe(String ruta) {
 		File f = new File(ruta);
-		if(f.isFile()|| f.isDirectory()) {
+		if(f.exists()) {
 			return true;
 		}
 		else return false;
