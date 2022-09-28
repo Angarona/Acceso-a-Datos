@@ -23,18 +23,7 @@ public class UD2_10_Main {
 			xstream.alias("Peliculas", List.class);
 			xstream.alias("Pelicula", Pelicula.class);
 			xstream.toXML(lista, new FileOutputStream("src\\Ficheros\\Peliculas.txt"));
-			System.out.println("Fichero creado en XML...");			
-			
-			
-			List<Pelicula> listaConsola = (ArrayList)xstream.fromXML(new FileInputStream("src\\Ficheros\\Peliculas.txt"));
-			
-			System.out.println("Número de peliculas: " + lista.size());
-			
-			for(Pelicula p: lista) {
-				System.out.println(p);
-			}
-			System.out.println("Fin del fichero.");
-			
+			System.out.println("Fichero creado en XML...");
 			
 			
 		} catch (Exception e){
